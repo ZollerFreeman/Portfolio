@@ -28,6 +28,7 @@ nav div {
 
 .round_nav a{
     color:var(--textMain);
+    font-size: 22px;
 }
 
 .nav_selected a{

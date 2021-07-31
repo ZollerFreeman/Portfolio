@@ -1,8 +1,8 @@
 :root{
-    --themeMain: #371544; /* For background */    
-    --themeSecond: #1F0F26;
-    --themeComp: #a71b1b; /* For complementary, third color. Footer + pics overlay */
-    --themeExtra:#a71b1b;
+    --themeMain: #3F1850; /* For background */    
+    --themeSecond: #3bdada;
+    --themeComp: #D92938; /* For complementary, third color. Footer + pics overlay */
+    --themeExtra:#034c69;
 
     --textMain:#EAEAEA;
     --textSecondary: black;
