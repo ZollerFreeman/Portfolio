@@ -1,0 +1,70 @@
+:root{
+    --themeMain: #FBEDE2; /* For background */
+    --themeSecond: #754C24; /* For secondary color over background */
+    --themeComp: #707070; /* For complementary, third color. Footer + pics overlay */
+    --themeExtra: #DED419;
+
+    --buttonColor: #754C24;
+    --borderColor: #754C24;
+
+    --textMain:black;
+    --textSecondary:white;
+}
+
+body{
+    background-image: url("/images/izlandia/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Main */
+
+.main .container{
+    padding: 0px 40px;
+    margin-bottom: 40px;
+}
+
+#izlandia_main img{
+    width: 100%;
+}
+
+.main .grid{
+    justify-content: flex-start;
+    align-items: flex-start;    
+    gap: 40px;    
+}
+
+.main p{
+    font-size: 18px;
+}
+
+.main .grid{
+    grid-template-columns: 1fr 3fr;
+}
+
+.main .grid:first-child{    
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.main h4{
+    margin-bottom:10px;
+}
+
+
+#main_bot_left h4{
+    margin-top: 10px;
+}
+
+#main_bot_left img{
+    max-width: 300px;    
+}
+
+#main_bot_right{
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+

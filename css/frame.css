@@ -1,0 +1,139 @@
+/* Navigation */
+
+.navbar .grid{
+    grid-template-columns: 0.5fr 0.5fr 2fr 1.5fr;    
+    min-height: 100px; 
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar h2 {
+    color: var(--textMain); 
+    margin:0;
+}
+
+/* Round Navigation */
+.round_nav{
+    background-color: var(--themeMain);
+    border: 3px solid var(--borderColor);
+    border-radius: 50px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.round_nav a{
+    color:var(--textMain);
+}
+
+.nav_selected a{
+    background-color: var(--themeSecond);
+    border-radius: 50px;    
+    padding: 38px 60px;  
+    color: var(--themeExtra);  
+    font-weight: bold;
+}
+
+.round_nav_hov a:hover{
+    background-color: var(--themeExtra);
+    color:var(--textMain);
+    padding: 20px 20px;
+    border-radius: 45px;    
+    font-weight: bold;
+}
+
+/*  SubNav */
+
+.subnav{
+    color: var(--textMain);
+    text-align: center;
+    max-width: 550px;
+}
+
+.mainCard{
+    background-color: var(--themeMain);
+    border: 3px solid var(--borderColor);
+    color: var(--textMain);
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+
+.subnav h3{
+    margin: 0;
+}
+
+.subnav h4{
+    margin: 0;
+    font-weight: normal;
+}
+
+
+/* Footer */
+footer{
+    background-color: var(--themeComp);
+    color:var(--textSecondary);
+}
+
+footer h5{
+    margin:0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+footer .container{
+    height: 50px;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+
+
+/* Tablets and under */
+@media (max-width: 1300px) {
+    #izlandia_main .grid,
+    .about .grid,
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .main .container{     
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .navbar h2{ font-size: 36px;}
+
+}
+
+@media (max-width: 860px) {
+    body .navbar .grid{
+        grid-template-columns: auto auto auto;
+        margin: 25px 0;
+    }
+
+    #contacts .flex,
+    footer .flex{
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px 0;
+        overflow: visible;
+    }
+    footer h5{ width: 100%;}
+
+    .navbar h2{
+        grid-area: 2 / 1 / span 1 / span 3;
+    }
+}
+

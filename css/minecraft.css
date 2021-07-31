@@ -1,0 +1,35 @@
+:root{
+    --themeMain: #371544; /* For background */    
+    --themeSecond: #1F0F26;
+    --themeComp: #a71b1b; /* For complementary, third color. Footer + pics overlay */
+    --themeExtra:#a71b1b;
+
+    --textMain:#EAEAEA;
+    --textSecondary: black;
+}
+
+body{
+    background-image: url("/images/minecraft/graph1.jpg");
+    background-repeat: repeat;    
+    background-size: contain;
+}
+
+.main h4{
+    margin-top: 60px;
+}
+
+.main img{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 5px;
+}
+
+.main div{
+    margin-bottom: 40px;
+}
+
+footer{    
+    color: var(--textMain);
+}

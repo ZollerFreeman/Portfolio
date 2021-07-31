@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hun">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Andréka Zoltán - Rólam</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <nav class="container">
+            <div class="grid link_card_primary">
+                <div id="nav_selected">
+                    <div id="arrow"></div>
+                    <a class="selected" href="index.html">Rólam</a>
+                </div>
+                <div id="hidden_nav">
+                    <a class="selected" href="index.html">Rólam</a>
+                </div>
+                <div>
+                    <a href="#portfolio">Munkáim</a>
+                </div>
+                    <h2 class="selected">Andréka Zoltán Márk</h2>
+                <div>
+                    <a href="#contacts">Kapcsolat</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero section -->    
+    <section class="hero_section">
+        <div class="container">
+            <img id="hero_img" src="images/river_far3.jpg">
+            <div id="hero_text">
+                <div id="hero_text_container">
+                    <h3>FULLSTACK WEB-FEJLESZTŐ</h3>
+                    <div class="separator"></div>
+                    <div>
+                        <h3>UI/UX DESIGNER</h3>
+                        <p id="hero_text_bot">
+                            Az ELTE Informatikai Kar végzett hallgatója vagyok. A jó megjelenésért és a megragadó felhasználó
+                            élményekért lelkesedek. Jelenleg Budapesten önállóan design-t és weblapfejlesztést tanulok.
+                        </p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about">
+        <div class="container grid">
+            <div id="about_left_row">
+                <h4>Ki is vagyok</h4>
+                <p>
+                    &nbsp;&nbsp;Kreatív gondolkodóként, aki szereti a feladatokat célratörően megoldani, az otthoni vagy kiscsapatos munkavégzés híve vagyok.
+                    <br>&nbsp;&nbsp;Számomra fontos az egyediség. Manapság a modern termékeknek már nem elég megbízhatónak és hatékonynak lenniük, megjelenésükben is el kell tudniuk adni magukat. Minimális felhasználó-és piackutatással, kreatív írással és szépérzékkel a webalkalmazások könnyen esztétikussá, megragadóvá válhatnak, legyen szó egy kisebb bolt kezdőlapjáról vagy egy multinacionális cég kezelőfelületéről.
+                    <br>&nbsp;&nbsp;Célom a pályám során elém kerülő weboldalakat életre kelteni, hogy idővel minél több ember számára tehessem otthonosabbá a mindennapi böngészést.
+                </p>
+                <h4>Ismert technológiák</h4>
+                <img src="images/stick-it.png" alt="">
+            </div>
+            <div id="about_right_row">
+                <h4>Mivel foglalkozok</h4>
+                <div>
+                    <img class="web_img" src="images/web-design.png" alt="web-design">
+                    <div id="about_middle">
+                        <img src="images/front-end.png" alt="front-end">
+                        <img src="images/back-end.png" alt="back-end">
+                    </div>
+                    <img id="about_right_last" class="web_img" src="images/illustration.png" alt="illusztráció">
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h4>Néhány kiemelt projektem</h4>
+            <div class="flex">
+                <div class="card"> 
+                    <img src="images/minecraft.png" alt="">    
+                    <div class="card_text">
+                        <h6>Minecraft és az OpenGL</h6>
+                        <p>
+                            Kalandos életem a C++ és a számítógépes grafika világában.
+                        </p>
+                        <a href="minecraft.html">Tovább</a>
+                    </div>
+                </div>
+                <div class="card"> 
+                    <img src="images/Izlandia.png" alt="">    
+                    <div class="card_text">
+                        <h6>Izlandia -Tower Defense Játék</h6>
+                        <p>
+                            Egyetemi csapatmunka, ahol egy hajós témájú stratégiai játékot valósítottunk meg. Felhasznált eszközök: C#, Unity
+                        </p>
+                        <a href="Izlandia.html">Tovább</a>
+                    </div>
+                </div>
+                <div class="card"> 
+                    <img src="images/global.png" alt="">    
+                    <div class="card_text">
+                        <h6>Egy régi weblap újratervezése</h6>
+                        <p>Apám cégének újratervezett logója és honlapja. Összehasonlítás a régi és az új design köztt. Felhasznált eszközök: Adobe XD, Adobe Illustrator</p>
+                        <a href="global.html">Tovább</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+<!-- Contact me -->
+    <section class="contact_me">
+        <div class="container contact_card">
+            <h4>Vedd fel velem a kapcsolatot</h4>
+            <form action="mailto:andreka.zoltan24@gmail.com"
+                method="post" enctype="text/plain">
+				<label>Név</label>
+				<input class="input_field" type="text" name="name">
+
+				<label>Tárgy</label>
+				<input class="input_field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input_field" type="text" name="email">
+
+				<label>Üzenet</label>
+				<textarea class="input_field" type="textarea" name="message"></textarea>
+
+				<input class="btn" id="submit-btn" type="submit" value="Send">
+			</form>
+
+            <div id="contacts">
+                <div class="flex">
+                    <p>Email: andreka.zoltan24@gmail.com</p>
+                    <p>Tel: +3670 315 6306</p>
+                </div>
+            </div>
+            <hr class="line">
+            
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <div class="container flex">
+            <h5> © 2021 - Andréka Zoltán Márk </h5>            
+            <h5> Idézet</h5>  
+        </div>
+    </footer>
+
+</body>
+</html>

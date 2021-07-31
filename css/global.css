@@ -1,0 +1,31 @@
+:root{
+    --themeMain: #EBEBEB; /* For background */    
+    --themeSecond: #045B8C;
+    --themeComp: #30373D; /* For complementary, third color. Footer + pics overlay */
+    --themeExtra:#FE861C;
+
+    --textMain:black;
+    --textSecondary:#EAEAEA;
+}
+
+body{
+    background-image: url("/images/global/storm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main h4{
+    margin-top: 60px;
+}
+
+.main img{
+    width: 100%;
+    max-height: 720px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 5px;
+}
+
+.main div{
+    margin-bottom: 40px;
+}
